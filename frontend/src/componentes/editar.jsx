@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import Select from "react-select";
+import Header from "./header";
 
 
 const Editar = () =>{
@@ -66,6 +67,8 @@ const Editar = () =>{
     
 
     return(
+        <>
+        <Header />
         <div  style={{display:'flex', justifyContent:'center'}}>
             <Form className="m-3 w-50">
                 <Form.Group className="mb-3" controlId="formBasic">
@@ -86,6 +89,7 @@ const Editar = () =>{
                         options={opcionesRol}
                         onChange={getRole}
                         value={role}
+                        placeholder={user.role}
                     />
                 </Form.Group>
                 <Link to='/'>
@@ -95,6 +99,7 @@ const Editar = () =>{
                 </Link>
             </Form>
         </div >
+    </>
     )
 }
 

@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import Select from 'react-select';
+import Header from "./header";
 
 const Crear = ( ) => {
 
@@ -53,6 +54,8 @@ const Crear = ( ) => {
     console.log(role.value)
 
     return(
+        <>
+        <Header />
         <div style={{display:'flex', justifyContent:'center', flexDirection:'column',alignItems:'center'}}>
             <h1>Crear nuevo usuario</h1>
             <Form className="m-3 w-50">
@@ -85,6 +88,7 @@ const Crear = ( ) => {
             </Form>
         
         </div>
+    </>
     )
 
 }

@@ -6,7 +6,7 @@ import { BsPencil,BsArchiveFill,BsFillCloudPlusFill } from "react-icons/bs";
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-
+import Header from './header';
 
 const Inicio = ( ) => {
 
@@ -53,8 +53,21 @@ const Inicio = ( ) => {
           })
     }
 
+    const [usuario, setUsuario] = useState([])
+    const [password, setPassword] = useState([])
+
+    const getUsuario = (e) =>{
+        setUsuario(e.target.value)
+    }
+    const getPassword = (e) =>{
+        setPassword(e.target.value)
+    }
+
+    
+    
     return(
         <>  
+            <Header />
             <div style={{margin:'10px',display:'flex', justifyContent:'space-evenly'}}>
                <Link to='/crearusuario'>
                 <Button variant='success'>

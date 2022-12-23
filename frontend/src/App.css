@@ -5,4 +5,31 @@
 .navbar{
   background-color: #221969;
   color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formInicioSesion{
+  width: 40%;
+  margin-left: 30%;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border:solid 0.2px rgba(24, 23, 23, 0.123);
+  padding: 10px;
+  text-align: center;
+  margin-top:20px;
+  background-color: rgb(253, 251, 246);
+  box-shadow: -1px 1px 10px 3px  #221969;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cerrarsesion{
+  background-color: #221969;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
 }
